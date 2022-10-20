@@ -62,6 +62,19 @@ const App = () => {
     },
   ]
 
+  const alyssasThings = [
+    {
+      name: "My dog Indie",
+      image: "",  
+      attributes: ["furry", "cute", "loves sticks", "energized"],
+    },
+    {
+      name: "Taco Bell",
+      image: "",  
+      attributes: ["burrito", "delicious", "hot sauce", "late night"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
