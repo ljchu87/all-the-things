@@ -91,6 +91,10 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
+      <Route
+        path="/the-best-things"
+        element={<BestThings things={alyssasThings} />}
+      />
     </Routes>
   )
 }
