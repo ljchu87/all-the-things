@@ -110,10 +110,12 @@ const App = () => {
       <Route
       path="/the-lauren-things"
       element={<LaurensThings things={LaurensThings} />}
-    />
+      />
+        <Route
         path="/the-kewl-things"
         element={<KewlThings things={leonsThings} />}
       />
+      
     </Routes>
   )
 }
