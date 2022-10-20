@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import KewlThings from './pages/KewlThings/KewlThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -62,6 +63,16 @@ const App = () => {
     },
   ]
 
+
+  const leonsThings = [
+    {
+      name: "energy drinks",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      attributes: ["dog dad", "plant dad", "coder", "fitness enthusiast"],
+    },
+  ]
+
+
   const rachelsThings = [
     {
       name: "memes",
@@ -69,6 +80,7 @@ const App = () => {
       attributes: ["sometimes funny", "expire fast", "should lighten the mood"],
     },
   ]
+
 
 
   return (
@@ -86,6 +98,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-kewl-things"
+        element={<KewlThings things={leonsThings} />}
       />
     </Routes>
   )
