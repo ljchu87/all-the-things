@@ -1,7 +1,7 @@
 import ThingCard from '../../components/ThingCard/ThingCard'
 import { Link } from 'react-router-dom'
 
-const TheBestThings = (props) => {
+const BestThings = (props) => {
   return (
     <>
       <h1>Alyssa's Things</h1>
@@ -14,4 +14,4 @@ const TheBestThings = (props) => {
   )
 }
 
-export default TheBestThings
+export default BestThings
