@@ -62,6 +62,14 @@ const App = () => {
     },
   ]
 
+  const LaurenThings = [
+    {
+      name: "Chocolate",
+      image: " ",  
+      attributes: ["dark", "milk", "white", "ice cream"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -78,6 +86,10 @@ const App = () => {
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
       />
+      <Route
+      path="/the-lauren-things"
+      element={<LaurenThings things={LaurenThings} />}
+    />
     </Routes>
   )
 }
