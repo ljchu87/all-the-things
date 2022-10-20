@@ -62,6 +62,15 @@ const App = () => {
     },
   ]
 
+  const rachelsThings = [
+    {
+      name: "memes",
+      image: "meme.jpg",  
+      attributes: ["sometimes funny", "expire fast", "should lighten the mood"],
+    },
+  ]
+
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
