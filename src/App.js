@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import BestThings from './pages/BestThings/BestThings'
 import KewlThings from './pages/KewlThings/KewlThings'
 import Landing from './pages/Landing/Landing'
 
@@ -81,6 +82,19 @@ const App = () => {
     },
   ]
 
+  const alyssasThings = [
+    {
+      name: "My dog Indie",
+      image: "",  
+      attributes: ["furry", "cute", "loves sticks", "energized"],
+    },
+    {
+      name: "Taco Bell",
+      image: "",  
+      attributes: ["burrito", "delicious", "hot sauce", "late night"],
+    },
+  ]
+
 
 
   return (
@@ -98,6 +112,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-best-things"
+        element={<BestThings things={alyssasThings} />}
       />
       <Route
         path="/the-kewl-things"
