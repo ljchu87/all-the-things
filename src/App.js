@@ -64,6 +64,14 @@ const App = () => {
     },
   ]
 
+  const LaurensThings = [
+    {
+      name: "Chocolate",
+      image: " ",  
+      attributes: ["dark", "milk", "white", "ice cream"],
+    },
+  ]
+
 
   const leonsThings = [
     {
@@ -114,6 +122,10 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
+      path="/the-lauren-things"
+      element={<LaurensThings things={LaurensThings} />}
+      />
+        <Route
         path="/the-best-things"
         element={<BestThings things={alyssasThings} />}
       />
@@ -121,6 +133,7 @@ const App = () => {
         path="/the-kewl-things"
         element={<KewlThings things={leonsThings} />}
       />
+      
     </Routes>
   )
 }
