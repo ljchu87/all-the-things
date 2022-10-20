@@ -103,6 +103,10 @@ const App = () => {
         path="/the-kewl-things"
         element={<KewlThings things={leonsThings} />}
       />
+      <Route
+        path="/help-me"
+        element={<SadThings things={rachelsThings} />}
+      />
     </Routes>
   )
 }
