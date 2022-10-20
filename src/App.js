@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import BestThings from './pages/BestThings/BestThings'
 import KewlThings from './pages/KewlThings/KewlThings'
+import HelplessThings from './pages/HelplessThings/HelplessThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -133,7 +134,10 @@ const App = () => {
         path="/the-kewl-things"
         element={<KewlThings things={leonsThings} />}
       />
-      
+      <Route
+        path="/the-helpless-things"
+        element={<HelplessThings things={rachelsThings} />}
+      />
     </Routes>
   )
 }
