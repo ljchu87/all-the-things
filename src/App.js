@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import BestThings from './pages/BestThings/BestThings'
+import KewlThings from './pages/KewlThings/KewlThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -63,6 +64,16 @@ const App = () => {
     },
   ]
 
+
+  const leonsThings = [
+    {
+      name: "energy drinks",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      attributes: ["dog dad", "plant dad", "coder", "fitness enthusiast"],
+    },
+  ]
+
+
   const rachelsThings = [
     {
       name: "memes",
@@ -85,6 +96,7 @@ const App = () => {
   ]
 
 
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -104,6 +116,10 @@ const App = () => {
       <Route
         path="/the-best-things"
         element={<BestThings things={alyssasThings} />}
+      />
+      <Route
+        path="/the-kewl-things"
+        element={<KewlThings things={leonsThings} />}
       />
     </Routes>
   )
