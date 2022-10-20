@@ -62,7 +62,7 @@ const App = () => {
     },
   ]
 
-  const LaurenThings = [
+  const LaurensThings = [
     {
       name: "Chocolate",
       image: " ",  
@@ -88,7 +88,7 @@ const App = () => {
       />
       <Route
       path="/the-lauren-things"
-      element={<LaurenThings things={LaurenThings} />}
+      element={<LaurensThings things={LaurensThings} />}
     />
     </Routes>
   )
