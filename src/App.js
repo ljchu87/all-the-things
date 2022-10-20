@@ -63,6 +63,7 @@ const App = () => {
     },
   ]
 
+
   const leonsThings = [
     {
       name: "energy drinks",
@@ -70,6 +71,17 @@ const App = () => {
       attributes: ["dog dad", "plant dad", "coder", "fitness enthusiast"],
     },
   ]
+
+
+  const rachelsThings = [
+    {
+      name: "memes",
+      image: "meme.jpg",  
+      attributes: ["sometimes funny", "expire fast", "should lighten the mood"],
+    },
+  ]
+
+
 
   return (
     <Routes>
