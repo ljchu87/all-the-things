@@ -63,6 +63,14 @@ const App = () => {
     },
   ]
 
+  const rachelsThings = [
+    {
+      name: "memes",
+      image: "meme.jpg",  
+      attributes: ["sometimes funny", "expire fast", "should lighten the mood"],
+    },
+  ]
+
   const alyssasThings = [
     {
       name: "My dog Indie",
@@ -75,6 +83,7 @@ const App = () => {
       attributes: ["burrito", "delicious", "hot sauce", "late night"],
     },
   ]
+
 
   return (
     <Routes>
